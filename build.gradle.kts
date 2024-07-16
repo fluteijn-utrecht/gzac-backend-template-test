@@ -28,50 +28,52 @@ java.targetCompatibility = JavaVersion.VERSION_17
 
 repositories {
     mavenCentral()
-    maven { url = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/") }
+//    maven { url = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/") }
 }
 
 val valtimoVersion: String by project
 
 dependencies {
 
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+//    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 
     implementation("com.ritense.valtimo:audit:$valtimoVersion")
-    implementation("com.ritense.valtimo:besluit:$valtimoVersion")
+//    implementation("com.ritense.valtimo:besluit:$valtimoVersion")
     implementation("com.ritense.valtimo:case:$valtimoVersion")
     implementation("com.ritense.valtimo:connector:$valtimoVersion")
-    implementation("com.ritense.valtimo:contactmoment:$valtimoVersion")
+//    implementation("com.ritense.valtimo:contactmoment:$valtimoVersion")
     implementation("com.ritense.valtimo:contract:$valtimoVersion")
     implementation("com.ritense.valtimo:core:$valtimoVersion")
-    implementation("com.ritense.valtimo:dashboard:$valtimoVersion")
+//    implementation("com.ritense.valtimo:dashboard:$valtimoVersion")
     implementation("com.ritense.valtimo:document:$valtimoVersion")
-    implementation("com.ritense.valtimo:documenten-api:$valtimoVersion")
+//    implementation("com.ritense.valtimo:documenten-api:$valtimoVersion")
     implementation("com.ritense.valtimo:form:$valtimoVersion")
     implementation("com.ritense.valtimo:form-link:$valtimoVersion")
     implementation("com.ritense.valtimo:form-flow:$valtimoVersion")
     implementation("com.ritense.valtimo:form-flow-valtimo:$valtimoVersion")
-    implementation("com.ritense.valtimo:haalcentraal-brp:$valtimoVersion")
+//    implementation("com.ritense.valtimo:haalcentraal-brp:$valtimoVersion")
     implementation("com.ritense.valtimo:keycloak-iam:$valtimoVersion")
-    implementation("com.ritense.valtimo:klant:$valtimoVersion")
+//    implementation("com.ritense.valtimo:klant:$valtimoVersion")
     implementation("com.ritense.valtimo:local-document-generation:$valtimoVersion")
     implementation("com.ritense.valtimo:milestones:$valtimoVersion")
-    implementation("com.ritense.valtimo:notes:$valtimoVersion")
+//    implementation("com.ritense.valtimo:notes:$valtimoVersion")
     implementation("com.ritense.valtimo:object-management:$valtimoVersion")
-    implementation("com.ritense.valtimo:objects-api:$valtimoVersion")
+//    implementation("com.ritense.valtimo:objects-api:$valtimoVersion")
     implementation("com.ritense.valtimo:objecten-api:$valtimoVersion")
     implementation("com.ritense.valtimo:objecttypen-api:$valtimoVersion")
     implementation("com.ritense.valtimo:openzaak:$valtimoVersion")
     implementation("com.ritense.valtimo:plugin-valtimo:$valtimoVersion")
     implementation("com.ritense.valtimo:process-document:$valtimoVersion")
-    implementation("com.ritense.valtimo:smartdocuments:$valtimoVersion")
+//    implementation("com.ritense.valtimo:smartdocuments:$valtimoVersion")
     implementation("com.ritense.valtimo:web:$valtimoVersion")
+    implementation("com.ritense.valtimo:local-resource:$valtimoVersion")
     implementation("com.ritense.valtimo:local-mail:$valtimoVersion")
     implementation("com.ritense.valtimo:zaken-api:$valtimoVersion")
     implementation("com.ritense.valtimo:objecten-api-authentication:$valtimoVersion")
     implementation("com.ritense.valtimo:test-utils-common:$valtimoVersion")
 
-    implementation("mysql:mysql-connector-java")
+//    implementation("mysql:mysql-connector-java")
+    implementation("org.postgresql:postgresql:42.6.0")
 
     // Kotlin logger
     implementation("io.github.microutils:kotlin-logging:2.1.21")

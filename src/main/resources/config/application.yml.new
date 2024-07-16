@@ -18,7 +18,7 @@ spring:
     profiles:
         active: ${SPRING_PROFILES_ACTIVE}
     application:
-        name: gzac-backend
+        name: valtimo-backend
     jackson:
         date-format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
         time-zone: UTC
@@ -111,7 +111,7 @@ mailing:
 valtimo:
     app:
         scheme: http
-        hostname: ${VALTIMO_APP_HOSTNAME}
+        hostname: 8080-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}
     jwt:
         base64encoding: false #auth0 client is not base64 encoded
         tokenValidityInSeconds: 3600 # Token is valid 1 hour
@@ -133,14 +133,9 @@ valtimo:
         license:
         licenseUrl:
     connector-encryption:
-        secret: "0123456789101112"
+        secret: ${VALTIMO_CONNECTORENCRYPTION_SECRET}
     plugin:
-        encryption-secret: "abcdefghijklmnop"
-#    openklant:
-#        url: https://openklant-zgw.test.k8s.ritense.com
-#        clientId: dummy
-#        secret: dummy
-#        rsin: dummy
+        encryption-secret: "579156b12b9a457a579156b12b9a457a"
     database: postgres
     web:
         cors:
@@ -154,7 +149,7 @@ valtimo:
 
 spring-actuator:
     username: admin
-    password: #env var
+    password: ${SPRING-ACTUATOR_PASSWORD}
 
 audit:
     record:
