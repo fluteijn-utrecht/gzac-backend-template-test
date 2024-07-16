@@ -6,5 +6,8 @@
 
 tasks:
   - init: ./gradlew build
-
+image: ritensebv/gitpod-java17-postgres:11-7-23-4
+vscode:
+  extensions:
+    - richardwillis.vscode-gradle
 
