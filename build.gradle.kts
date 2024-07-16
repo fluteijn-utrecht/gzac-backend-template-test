@@ -59,6 +59,7 @@ dependencies {
     implementation("com.ritense.valtimo:milestones:$valtimoVersion")
     implementation("com.ritense.valtimo:notes:$valtimoVersion")
     implementation("com.ritense.valtimo:object-management:$valtimoVersion")
+    implementation("com.ritense.valtimo:objects-api:$valtimoVersion")
     implementation("com.ritense.valtimo:objecten-api:$valtimoVersion")
     implementation("com.ritense.valtimo:objecttypen-api:$valtimoVersion")
     implementation("com.ritense.valtimo:openzaak:$valtimoVersion")
@@ -66,10 +67,14 @@ dependencies {
     implementation("com.ritense.valtimo:process-document:$valtimoVersion")
     implementation("com.ritense.valtimo:smartdocuments:$valtimoVersion")
     implementation("com.ritense.valtimo:web:$valtimoVersion")
+    implementation("com.ritense.valtimo:local-resource:$valtimoVersion")
     implementation("com.ritense.valtimo:local-mail:$valtimoVersion")
     implementation("com.ritense.valtimo:zaken-api:$valtimoVersion")
     implementation("com.ritense.valtimo:objecten-api-authentication:$valtimoVersion")
     implementation("com.ritense.valtimo:test-utils-common:$valtimoVersion")
+
+//    implementation("mysql:mysql-connector-java")
+    implementation("org.postgresql:postgresql:42.6.0")
 
     // Kotlin logger
     implementation("io.github.microutils:kotlin-logging:2.1.21")
