@@ -38,8 +38,34 @@ val valtimoVersion: String by project
 dependencies {
     implementation(platform("com.ritense.valtimo:valtimo-dependency-versions:$valtimoVersion"))
 
+//    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("com.ritense.valtimo:valtimo-dependencies")
 
+//    implementation("com.ritense.valtimo:audit:$valtimoVersion")
+//    implementation("com.ritense.valtimo:authorization:$valtimoVersion")
+//    implementation("com.ritense.valtimo:besluit:$valtimoVersion")
+//    implementation("com.ritense.valtimo:case:$valtimoVersion")
+//    implementation("com.ritense.valtimo:connector:$valtimoVersion")
+//    implementation("com.ritense.valtimo:contactmoment:$valtimoVersion")
+//    implementation("com.ritense.valtimo:contract:$valtimoVersion")
+//    implementation("com.ritense.valtimo:core:$valtimoVersion")
+//    implementation("com.ritense.valtimo:dashboard:$valtimoVersion")
+//    implementation("com.ritense.valtimo:document:$valtimoVersion")
+//    implementation("com.ritense.valtimo:documenten-api:$valtimoVersion")
+//    implementation("com.ritense.valtimo:form:$valtimoVersion")
+//    implementation("com.ritense.valtimo:form-link:$valtimoVersion")
+//    implementation("com.ritense.valtimo:form-flow:$valtimoVersion")
+//    implementation("com.ritense.valtimo:form-flow-valtimo:$valtimoVersion")
+//    implementation("com.ritense.valtimo:haalcentraal-brp:$valtimoVersion")
+//    implementation("com.ritense.valtimo:keycloak-iam:$valtimoVersion")
+//    implementation("com.ritense.valtimo:klant:$valtimoVersion")
+//    implementation("com.ritense.valtimo:notes:$valtimoVersion")
+//    implementation("com.ritense.valtimo:objects-api:$valtimoVersion")
+//    implementation("com.ritense.valtimo:plugin-valtimo:$valtimoVersion")
+//    implementation("com.ritense.valtimo:process-document:$valtimoVersion")
+//    implementation("com.ritense.valtimo:smartdocuments:$valtimoVersion")
+//    implementation("com.ritense.valtimo:web:$valtimoVersion")
+//    implementation("com.ritense.valtimo:test-utils-common:$valtimoVersion")
     implementation("com.ritense.valtimo:local-document-generation")
     implementation("com.ritense.valtimo:local-resource")
     implementation("com.ritense.valtimo:local-mail")
@@ -51,6 +77,7 @@ dependencies {
     implementation("com.ritense.valtimo:openzaak")
     implementation("com.ritense.valtimo:zaken-api")
 
+//    implementation("mysql:mysql-connector-java")
     implementation("org.postgresql:postgresql:42.7.3")
 
     if (System.getProperty("os.arch") == "aarch64") {
