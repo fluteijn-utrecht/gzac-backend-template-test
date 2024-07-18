@@ -55,6 +55,7 @@ dependencies {
     implementation("com.ritense.valtimo:keycloak-iam:$valtimoVersion")
 //    implementation("com.ritense.valtimo:klant:$valtimoVersion")
     implementation("com.ritense.valtimo:local-document-generation:$valtimoVersion")
+    implementation("com.ritense.valtimo:local-resource:$valtimoVersion")
     implementation("com.ritense.valtimo:milestones:$valtimoVersion")
 //    implementation("com.ritense.valtimo:notes:$valtimoVersion")
     implementation("com.ritense.valtimo:object-management:$valtimoVersion")
